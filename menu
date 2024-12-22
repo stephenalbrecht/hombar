@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #ff6347;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            border-bottom: 2px solid #ff6347;
+            padding-bottom: 10px;
+            color: #ff6347;
+        }
+
+        .menu-item {
+            margin-bottom: 20px;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+
+        .menu-item h3 {
+            margin: 0;
+            color: #333;
+        }
+
+        .menu-item p {
+            margin: 5px 0 0;
+        }
+
+        footer {
+            text-align: center;
+            margin: 20px 0;
+            color: #666;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bar Menu</h1>
+</header>
+
+<div class="container">
+
+    <!-- Beer Section -->
+    <section id="beer">
+        <h2>Beer</h2>
+        <div class="menu-item">
+            <h3>IPA</h3>
+            <p>A hoppy and refreshing craft beer.</p>
+        </div>
+        <div class="menu-item">
+            <h3>Pilsner</h3>
+            <p>A crisp and light lager.</p>
+        </div>
+        <div class="menu-item">
+            <h3>Stout</h3>
+            <p>A rich and creamy dark beer with notes of coffee.</p>
+        </div>
+    </section>
+
+    <!-- Wine Section -->
+    <section id="wine">
+        <h2>Wine</h2>
+        <div class="menu-item">
+            <h3>Chardonnay</h3>
+            <p>A dry white wine with hints of oak and citrus.</p>
+        </div>
+        <div class="menu-item">
+            <h3>Cabernet Sauvignon</h3>
+            <p>A bold red wine with notes of blackberry and vanilla.</p>
+        </div>
+        <div class="menu-item">
+            <h3>Rosé</h3>
+            <p>A refreshing pink wine with floral and fruity notes.</p>
+        </div>
+    </section>
+
+    <!-- Cocktail Section -->
+    <section id="cocktails">
+        <h2>Cocktails</h2>
+        <div class="menu-item">
+            <h3>Margarita</h3>
+            <p>Tequila, triple sec, lime juice, served on the rocks or blended.</p>
+        </div>
+        <div class="menu-item">
+            <h3>Mojito</h3>
+            <p>White rum, lime juice, fresh mint leaves, sugar, and soda water.</p>
+        </div>
+        <div class="menu-item">
+            <h3>Old Fashioned</h3>
+            <p>Bourbon or rye whiskey, sugar, Angostura bitters, and orange peel.</p>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>© 2024 Cocktail Bar | All rights reserved</p>
+</footer>
+
+</body>
+</html>
