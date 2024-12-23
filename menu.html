@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bar Menu</title>
+    <title>Hombar Menu</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Courier New", serif;
             margin: 0;
             padding: 0;
             background-color: #f9f9f9;
@@ -14,7 +14,7 @@
         }
 
         header {
-            background-color: #ff6347;
+            background-color: #36392C;
             color: white;
             padding: 20px;
             text-align: center;
@@ -33,17 +33,17 @@
             margin-bottom: 40px;
         }
 
-        section h2 {
-            border-bottom: 2px solid #ff6347;
-            padding-bottom: 10px;
-            color: #ff6347;
-        }
-
-        .menu-item {
-            margin-bottom: 20px;
-            padding: 10px;
-            border-bottom: 1px solid #ddd;
-        }
+		section h2 {
+		    border-bottom: 2px solid #36392C;
+		    padding-bottom: 10px; /* Space between the text and the red line */
+		    margin-bottom: 20px; /* Space below the red line */
+		    color: #36392C;
+		}
+		
+		.menu-item, ul {
+		    margin-top: 0; /* Remove extra space above the content */
+		    margin-bottom: 20px; /* Add space after the list */
+		}
 
         .menu-item:last-child {
             border-bottom: none;
@@ -58,6 +58,21 @@
             margin: 5px 0 0;
         }
 
+		.name {
+    		font-weight: bold;
+		}
+
+		.origin {
+    		font-weight: normal;
+    		color: #555; /* Optional: Add a lighter color for distinction */
+		}
+
+		ul {
+		    list-style-type: none; /* Removes bullet points */
+		    padding: 0; /* Removes default padding */
+		    margin-top: 10px; /* Adds consistent spacing above the list */
+		}
+		
         footer {
             text-align: center;
             margin: 20px 0;
@@ -75,66 +90,221 @@
 <body>
 
 <header>
-    <h1>Bar Menu</h1>
+    <h1>The <u>Hombar</u> Menu</h1>
+	<p>24.12.2024 - Philipp's birthday edition</p>
 </header>
 
 <div class="container">
 
-    <!-- Beer Section -->
-    <section id="beer">
-        <h2>Beer</h2>
+    <!-- Draught Beer Section -->
+    <section id="draught beer">
+        <h2>Draught Beer</h2>
         <div class="menu-item">
-            <h3>IPA</h3>
-            <p>A hoppy and refreshing craft beer.</p>
+            <h3>Guinness</h3>
+            <p>A rich and creamy dark beer with notes of coffee, 4.2%</p>
         </div>
-        <div class="menu-item">
-            <h3>Pilsner</h3>
+<!--         <div class="menu-item">
+            <h3>Lager</h3>
             <p>A crisp and light lager.</p>
+        </div> -->
+    </section>
+
+	<!-- Bottle Beer Section -->
+    <section id="bottle beer">
+        <h2>Bottle Beer</h2>
+        <div class="menu-item">
+            <h3>Franziskaner</h3>
+            <p>Cloudy Bavarian wheat beer, 5%</p>
         </div>
         <div class="menu-item">
-            <h3>Stout</h3>
-            <p>A rich and creamy dark beer with notes of coffee.</p>
+            <h3>Simmentaler</h3>
+            <p>Mountain pale ale, 4.3%</p>
+        </div>
+        <div class="menu-item">
+            <h3>Paulaner Radler</h3>
+            <p>Munich lager and lemonade, 0%</p>
         </div>
     </section>
 
-    <!-- Wine Section -->
-    <section id="wine">
-        <h2>Wine</h2>
+    <!-- Bubbles -->
+    <section id="sparkling wine">
+        <h2>Bubbles</h2>
         <div class="menu-item">
-            <h3>Chardonnay</h3>
-            <p>A dry white wine with hints of oak and citrus.</p>
+            <h3>No Name </h3>
+            <p>Blanc de Blancs Brut</p>
         </div>
         <div class="menu-item">
-            <h3>Cabernet Sauvignon</h3>
-            <p>A bold red wine with notes of blackberry and vanilla.</p>
-        </div>
-        <div class="menu-item">
-            <h3>Rosé</h3>
-            <p>A refreshing pink wine with floral and fruity notes.</p>
+            <h3>Moet & Chandon</h3>
+            <p>Brut Impérial</p>
         </div>
     </section>
 
+    <!-- Long drinks Section -->
+    <section id="long drinks">
+        <h2>Long drinks</h2>
+        <div class="menu-item">
+            <h3>Gin and Tonic</h3>
+            <p>Gin and tonic water served over ice</p>
+        </div>
+        <div class="menu-item">
+            <h3>Moscow Mule</h3>
+            <p>Vodka, ginger beer and lime in a copper mug</p>
+        </div>
+        <div class="menu-item">
+            <h3>London Mule</h3>
+            <p>Gin, ginger beer and lime in a copper mug</p>
+        </div>
+    </section>
+
+    <!-- Aperitifs Section -->
+    <section id="aperitifs">
+        <h2>Aperitifs</h2>
+        <div class="menu-item">
+            <h3>Hugo</h3>
+            <p>Prosecco, elderflower syrup, soda water and fresh mint</p>
+        </div>
+        <div class="menu-item">
+            <h3>Aperol Spritz</h3>
+            <p>Aperol, Prosecco and soda water with a slice of orange</p>
+        </div>
+        <div class="menu-item">
+            <h3>Campari Soda</h3>
+            <p>Campari and soda water with a slice of orange</p>
+        </div>
+        <div class="menu-item">
+            <h3>Negroni</h3>
+            <p>Gin, Campari and sweet vermouth</p>
+        </div>
+    </section>
+	
     <!-- Cocktail Section -->
     <section id="cocktails">
         <h2>Cocktails</h2>
         <div class="menu-item">
-            <h3>Margarita</h3>
-            <p>Tequila, triple sec, lime juice, served on the rocks or blended.</p>
+            <h3>French Martini</h3>
+            <p>Vodka, pineapple juice and Chambord</p>
         </div>
         <div class="menu-item">
-            <h3>Mojito</h3>
-            <p>White rum, lime juice, fresh mint leaves, sugar, and soda water.</p>
+            <h3>Espresso Martini</h3>
+            <p>Vodka, fresh espresso and Kahlua</p>
         </div>
         <div class="menu-item">
-            <h3>Old Fashioned</h3>
-            <p>Bourbon or rye whiskey, sugar, Angostura bitters, and orange peel.</p>
+            <h3>Whiskey Sour</h3>
+            <p>Bourbon, Angostura bitters and orange peel</p>
+        </div>
+        <div class="menu-item">
+            <h3>Mojhito</h3>
+            <p>White rum, fresh mint, lime juice, sugar and soda water</p>
+        </div>
+        <div class="menu-item">
+            <h3>Pina Colada</h3>
+            <p>White rum, coconut cream and pineapple juice</p>
         </div>
     </section>
 
+	<!-- White Wine Section -->
+    <section id="white wine">
+        <h2>White</h2>
+        <div class="menu-item">
+            <h3>Bordeaux</h3>
+            <p>Chateau Duplessy Vin Blanc Barrique 2022, France</p>
+        </div>
+		<div class="menu-item">
+			<h3>Pinot Gris</h3>
+            <p>Gruss Casse-Noisette 2019, France</p>
+        </div>
+		<div class="menu-item">
+			<h3>Muscat</h3>
+            <p>Gruss Ottonel 2019, France</p>
+		</div>
+    </section>
+
+	<!-- Red Wine Section -->
+    <section id="red wine">
+        <h2>Red</h2>
+        <div class="menu-item">
+            <h3>Bordeaux</h3>
+            <p>Chateau Duplessy Vin Rouge Tradition 20xx, France</p>
+			<p>Chateau Duplessy Vin Rouge Charlotte 20xx, France</p>
+        </div>
+        <div class="menu-item">
+            <h3>Pinot Noir</h3>
+            <p>Nussbaumer Blauburgrunder 2023, Switzerland</p>
+        </div>
+    </section>
+	
+	<!-- Gin Section -->
+	<section id="gin">
+	    <h2>Gin</h2>
+	    <div class="menu-item">
+			<p>Green Ant Gin, Seven Seasons, Australia</p>
+			<p>Monte Gin "Patricia 40", Austria</p>
+			<p>Wien Gin, Vienna Dry Gin, Austria</p> 
+			<p>Monkey 47, Schwarzwald Dry Gin, Germany</p>
+			<p>Siegried Wonderleaf Alkoholfrei, Germany</p>
+			<p>Le Tribute Gin, Spain</p>
+			<p>Turicum Dry Gin Zürich, Switzerland</p>
+			<p>Slingsby London Dry Gin, UK</p>
+	    </div>
+	</section>
+
+    <!-- Whiskey Section -->
+    <section id="whiskey">
+        <h2>Whiskey</h2>
+        <div class="menu-item">
+            <p>The Classic Laddie, Unpeated Islay Single Malt, Scottland</p>
+			<p>Mortlach, Speyside, Single Malt, Scottland</p>
+			<p>Jameson, Tripple Distilled Irish Whiskey, Ireland</p>
+			<p>Waldviertler, Rye Malt, 6 Years, Austria</p>
+			<p>Moon Spirit, Pur Malt, France</p>
+        </div>
+    </section>
+
+    <!-- rum Section -->
+    <section id="rum">
+        <h2>Rum</h2>
+        <div class="menu-item">
+            <p>Ron Abuelo Centuria, Panama</p>
+			<p>Panama Rum, Special Reserve, 12 Years, Panama</p>
+			<p>Ron Zarcapa XO Solera Reserva Especial, Guatemala</p>
+        </div>
+    </section>
+
+    <!-- liqueurs Section -->
+    <section id="liqueur">
+        <h2>Liqueurs</h2>
+        <div class="menu-item">
+            <p>Zirbe, Zirbenlikör, Austria</p>
+			<p>Grand Marnier, France</p>
+			<p>Baileys Irish cream, Ireland</p>
+			<p>Licor Beirão, Portugal</p>
+			<p>Amarula, South Africa</p>
+		</div>
+    </section>
+
+    <!-- schnapps Section -->
+    <section id="schnapps">
+        <h2>Schnapps</h2>
+        <div class="menu-item">
+            <p>Marc d'Alsace Gewurztraminer, France</p>
+			<p>Eau-de-vie Framboise Sauvage, France</p>
+        </div>
+    </section>
+	
+	<!-- brandy Section -->
+    <section id="brandy">
+        <h2>Brandy</h2>
+        <div class="menu-item">
+            <p>A.E. Dor Cognac, France</p>
+			<p>Bas Armagnac Château Saint Aubin, France</p>
+			<p>Croft Brandy, Spain</p>
+        </div>
+    </section>
+	
 </div>
 
 <footer>
-    <p>© 2024 Cocktail Bar | All rights reserved</p>
+    <p>Why limit happy to an hour?</p>
 </footer>
 
 </body>
