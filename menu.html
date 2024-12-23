@@ -67,6 +67,13 @@
     		color: #555; /* Optional: Add a lighter color for distinction */
 		}
 
+		/* Individual Wine Styling */
+		.wine {
+		    padding: 0px;
+		    margin-bottom: 0px; /* Space between wines */
+			line-height: 1.6;
+		}
+		
 		ul {
 		    list-style-type: none; /* Removes bullet points */
 		    padding: 0; /* Removes default padding */
@@ -207,15 +214,21 @@
         <h2>White</h2>
         <div class="menu-item">
             <h3>Bordeaux</h3>
-            <p>Chateau Duplessy Vin Blanc Barrique 2022, France</p>
+            <div class="wine">
+				<p><strong>Chateau Duplessy</strong> Vin Blanc Barrique 2022, France</p>
+			</div>
         </div>
 		<div class="menu-item">
 			<h3>Pinot Gris</h3>
-            <p>Gruss Casse-Noisette 2019, France</p>
+            <div class="wine">
+				<p><strong>Gruss</strong> Casse-Noisette 2019, France</p>
+			</div>
         </div>
 		<div class="menu-item">
 			<h3>Muscat</h3>
-            <p>Gruss Ottonel 2019, France</p>
+            <div class="wine">	
+				<p><strong>Gruss</strong> Ottonel 2019, France</p>
+			</div>
 		</div>
     </section>
 
@@ -224,27 +237,47 @@
         <h2>Red</h2>
         <div class="menu-item">
             <h3>Bordeaux</h3>
-            <p>Chateau Duplessy Vin Rouge Tradition 20xx, France</p>
-			<p>Chateau Duplessy Vin Rouge Charlotte 20xx, France</p>
-        </div>
+            <div class="wine">
+				<p class="drink"><strong>Chateau Duplessy</strong> Vin Rouge Tradition 20xx, France</p>
+			</div>
+			<div class="wine">
+				<p class="drink"><strong>Chateau Duplessy</strong> Vin Rouge Charlotte 20xx, France</p>
+        	</div>
+		</div>
         <div class="menu-item">
             <h3>Pinot Noir</h3>
-            <p>Nussbaumer Blauburgrunder 2023, Switzerland</p>
-        </div>
+            <div class="wine">	
+				<p class="drink"><strong>Nussbaumer</strong> Blauburgrunder 2023, Switzerland</p>
+        	</div>
+		</div>
     </section>
 	
 	<!-- Gin Section -->
 	<section id="gin">
 	    <h2>Gin</h2>
 	    <div class="menu-item">
-			<p>Green Ant Gin, Seven Seasons, Australia</p>
-			<p>Monte Gin "Patricia 40", Austria</p>
-			<p>Wien Gin, Vienna Dry Gin, Austria</p> 
-			<p>Monkey 47, Schwarzwald Dry Gin, Germany</p>
-			<p>Siegried Wonderleaf Alkoholfrei, Germany</p>
-			<p>Le Tribute Gin, Spain</p>
-			<p>Turicum Dry Gin Zürich, Switzerland</p>
-			<p>Slingsby London Dry Gin, UK</p>
+            <p class="drink"><strong>Green Ant Gin</strong> Seven Seasons, Australia</p>
+		</div>
+		<div class="menu-item">
+            <p class="drink"><strong>Monte Gin</strong> 'Patricia 40', Austria</p>
+		</div>
+		<div class="menu-item">
+            <p class="drink"><strong>Wien Gin</strong> Vienna Dry Gin, Austria</p> 
+		</div>
+		<div class="menu-item">
+            <p class="drink"><strong>Monkey 47</strong> Schwarzwald Dry Gin, Germany</p>
+		</div>
+		<div class="menu-item">
+            <p class="drink"><strong>Siegried Wonderleaf</strong> Alkoholfrei, Germany</p>
+		</div>
+		<div class="menu-item">
+            <p class="drink"><strong>Le Tribute Gin</strong> Spain</p>
+		</div>
+		<div class="menu-item">
+            <p class="drink"><strong>Turicum Dry Gin</strong> Zürich, Switzerland</p>
+		</div>
+		<div class="menu-item">
+            <p class="drink"><strong>Slingsby</strong> London Dry Gin, UK</p>
 	    </div>
 	</section>
 
@@ -272,9 +305,13 @@
     <section id="rum">
         <h2>Rum</h2>
         <div class="menu-item">
-            <p>Ron Abuelo Centuria, Panama</p>
-			<p>Panama Rum, Special Reserve, 12 Years, Panama</p>
-			<p>Ron Zarcapa XO Solera Reserva Especial, Guatemala</p>
+            <p class="drink"><strong>Ron Abuelo</strong> Centuria, Panama</p>
+		</div>
+		<div class="menu-item">
+			<p class="drink"><strong>Panama Rum</strong> Special Reserve, 12 Years, Panama</p>
+		</div>
+		<div class="menu-item">
+			<p class="drink"><strong>Ron Zarcapa</strong> XO Solera Reserva Especial, Guatemala</p>
         </div>
     </section>
 
@@ -282,11 +319,19 @@
     <section id="liqueur">
         <h2>Liqueurs</h2>
         <div class="menu-item">
-            <p>Zirbe, Zirbenlikör, Austria</p>
-			<p>Grand Marnier, France</p>
-			<p>Baileys Irish cream, Ireland</p>
-			<p>Licor Beirão, Portugal</p>
-			<p>Amarula, South Africa</p>
+            <p class="drink"><strong>Zirbe</strong> Zirbenlikör, Austria</p>
+		</div>
+		<div class="menu-item">
+			<p class="drink"><strong>Grand Marnier</strong> France</p>
+		</div>
+		<div class="menu-item">
+			<p class="drink"><strong>Baileys Irish cream</strong> Ireland</p>
+		</div>
+		<div class="menu-item">
+			<p class="drink"><strong>Licor Beirão</strong> Portugal</p>
+		</div>
+		<div class="menu-item">
+			<p class="drink"><strong>Amarula</strong> South Africa</p>
 		</div>
     </section>
 
@@ -294,8 +339,10 @@
     <section id="schnapps">
         <h2>Schnapps</h2>
         <div class="menu-item">
-            <p>Marc d'Alsace Gewurztraminer, France</p>
-			<p>Eau-de-vie Framboise Sauvage, France</p>
+            <p class="drink"><strong>Marc d'Alsace Gewurztraminer</strong> France</p>
+		</div>
+		<div class="menu-item">
+			<p class="drink"><strong>Eau-de-vie Framboise Sauvage</strong> France</p>
         </div>
     </section>
 	
@@ -303,9 +350,13 @@
     <section id="brandy">
         <h2>Brandy</h2>
         <div class="menu-item">
-            <p>A.E. Dor Cognac, France</p>
-			<p>Bas Armagnac Château Saint Aubin, France</p>
-			<p>Croft Brandy, Spain</p>
+            <p class="drink"><strong>A.E. Dor Cognac</strong> France</p>
+		</div>
+		<div class="menu-item">
+			<p class="drink"><strong>Bas Armagnac</strong> Château Saint Aubin, France</p>
+		</div>
+		<div class="menu-item">
+			<p class="drink"><strong>Croft Brandy</strong> Spain</p>
         </div>
     </section>
 	
