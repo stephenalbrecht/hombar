@@ -92,6 +92,33 @@
                 padding: 10px;
             }
         }
+        
+        
+        .christmas-lights {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.light {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: currentColor;
+  animation: blink 1.5s infinite ease-in-out;
+}
+
+.light.red { color: red; animation-delay: 0s; }
+.light.green { color: green; animation-delay: 0.5s; }
+.light.yellow { color: yellow; animation-delay: 1s; }
+.light.blue { color: blue; animation-delay: 1.5s; }
+
+@keyframes blink {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 1; }
+}
+        
     </style>
 </head>
 <body>
@@ -99,6 +126,16 @@
 <header>
     <h1>The <u>Hombar</u> Menu</h1>
 	<p>24.12.2024 - Philipp's birthday edition</p>
+
+<div class="christmas-lights">
+  <span class="light red"></span>
+  <span class="light green"></span>
+  <span class="light yellow"></span>
+  <span class="light blue"></span>
+  <span class="light red"></span>
+  <span class="light green"></span>
+</div>
+
 </header>
 
 <div class="container">
