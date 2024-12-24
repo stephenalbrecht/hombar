@@ -119,6 +119,37 @@
   50% { opacity: 1; }
 }
         
+        
+#snowflakes {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.snowflake {
+  position: absolute;
+  top: -10px;
+  font-size: 1.5rem;
+  color: white;
+  opacity: 0.8;
+  animation: fall 10s linear infinite, sway 3s ease-in-out infinite;
+}
+
+@keyframes fall {
+  0% { top: -10px; }
+  100% { top: 100vh; }
+}
+
+@keyframes sway {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(20px); }
+}
+        
+        
     </style>
 </head>
 <body>
@@ -135,6 +166,8 @@
   <span class="light red"></span>
   <span class="light green"></span>
 </div>
+
+<div id="snowflakes"></div>
 
 </header>
 
@@ -417,3 +450,16 @@
 
 </body>
 </html>
+
+const snowflakesContainer = document.getElementById('snowflakes');
+const snowflakeCount = 50; // Adjust for more/less snowflakes
+
+for (let i = 0; i < snowflakeCount; i++) {
+  const snowflake = document.createElement('div');
+  snowflake.classList.add('snowflake');
+  snowflake.style.left = `${Math.random() * 100}vw`;
+  snowflake.style.animationDuration = `${Math.random() * 5 + 5}s`; // Between 5-10s
+  snowflake.style.animationDelay = `${Math.random() * 5}s`; // Random start
+  snowflake.textContent = '❄';
+  snowflakesContainer.appendChild(snowflake);
+}
