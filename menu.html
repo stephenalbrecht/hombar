@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hombar Menu</title>
+    <title>The Hombar Menu</title>
     <style>
         body {
             font-family: "Courier New", serif;
@@ -108,7 +108,7 @@
         <h2>Draught Beer</h2>
         <div class="menu-item">
             <h3>Guinness</h3>
-            <p>A rich and creamy dark beer with notes of coffee, 4.2%</p>
+            <p>A rich and creamy dark beer with notes of coffee. 4.2%</p>
         </div>
 <!--         <div class="menu-item">
             <h3>Lager</h3>
@@ -120,16 +120,19 @@
     <section id="bottle beer">
         <h2>Bottle Beer</h2>
         <div class="menu-item">
-            <h3>Franziskaner</h3>
-            <p>Cloudy Bavarian wheat beer, 5%</p>
+            <p class="drink"><strong>Franziskaner</strong> wheat beer, 5%</p>
         </div>
         <div class="menu-item">
-            <h3>Simmentaler</h3>
-            <p>Mountain pale ale, 4.3%</p>
+            <p class="drink"><strong>Simmentaler</strong> Mountain pale ale, 5.3%</p>
+        </div>
+		<div class="menu-item">
+            <p class="drink"><strong>Birra Moretti</strong> L’Autentica Lager, 4.6%</p>
+		</div>
+        <div class="menu-item">
+            <p class="drink"><strong>Simmentaler</strong> Pale ale, 0%</p>
         </div>
         <div class="menu-item">
-            <h3>Paulaner Radler</h3>
-            <p>Munich lager and lemonade, 0%</p>
+            <p class="drink"><strong>Paulaner</strong> Radler, 0%</p>
         </div>
     </section>
 
@@ -138,28 +141,11 @@
         <h2>Bubbles</h2>
         <div class="menu-item">
             <h3>No Name </h3>
-            <p>Blanc de Blancs Brut</p>
+            <p>Blanc de Blancs Brut, Switzerland</p>
         </div>
         <div class="menu-item">
             <h3>Moet & Chandon</h3>
-            <p>Brut Impérial</p>
-        </div>
-    </section>
-
-    <!-- Long drinks Section -->
-    <section id="long drinks">
-        <h2>Long drinks</h2>
-        <div class="menu-item">
-            <h3>Gin and Tonic</h3>
-            <p>Gin and tonic water served over ice</p>
-        </div>
-        <div class="menu-item">
-            <h3>Moscow Mule</h3>
-            <p>Vodka, ginger beer and lime in a copper mug</p>
-        </div>
-        <div class="menu-item">
-            <h3>London Mule</h3>
-            <p>Gin, ginger beer and lime in a copper mug</p>
+            <p>Brut Impérial, France</p>
         </div>
     </section>
 
@@ -181,6 +167,23 @@
         <div class="menu-item">
             <h3>Negroni</h3>
             <p>Gin, Campari and sweet vermouth</p>
+        </div>
+    </section>
+
+    <!-- Long drinks Section -->
+    <section id="long drinks">
+        <h2>Long drinks</h2>
+        <div class="menu-item">
+            <h3>Gin and Tonic</h3>
+            <p>Gin and tonic water served over ice</p>
+        </div>
+        <div class="menu-item">
+            <h3>Moscow Mule</h3>
+            <p>Vodka, ginger beer and lime in a copper mug</p>
+        </div>
+        <div class="menu-item">
+            <h3>London Mule</h3>
+            <p>Gin, ginger beer and lime in a copper mug</p>
         </div>
     </section>
 	
@@ -217,6 +220,9 @@
             <div class="wine">
 				<p><strong>Chateau Duplessy</strong> Vin Blanc Barrique 2022, France</p>
 			</div>
+            <div class="wine">
+				<p><strong>Chateau Duplessy</strong> Vin Blanc Tradition 2023, France</p>
+			</div>
         </div>
 		<div class="menu-item">
 			<h3>Pinot Gris</h3>
@@ -238,10 +244,13 @@
         <div class="menu-item">
             <h3>Bordeaux</h3>
             <div class="wine">
-				<p class="drink"><strong>Chateau Duplessy</strong> Vin Rouge Tradition 20xx, France</p>
+				<p class="drink"><strong>Chateau Duplessy</strong> Vin Rouge Tradition, France</p>
 			</div>
 			<div class="wine">
-				<p class="drink"><strong>Chateau Duplessy</strong> Vin Rouge Charlotte 20xx, France</p>
+				<p class="drink"><strong>Chateau Duplessy</strong> Vin Rouge Charlotte 2017, France</p>
+        	</div>
+			<div class="wine">
+				<p class="drink"><strong>Chateau Maucaillou</strong> Moulis 2018, France</p>
         	</div>
 		</div>
         <div class="menu-item">
@@ -342,7 +351,10 @@
             <p class="drink"><strong>Marc d'Alsace Gewurztraminer</strong> France</p>
 		</div>
 		<div class="menu-item">
-			<p class="drink"><strong>Eau-de-vie Framboise Sauvage</strong> France</p>
+			<p class="drink"><strong>Eau-de-vie Mirabelle</strong> France</p>
+        </div>
+		<div class="menu-item">
+			<p class="drink"><strong>Eau-de-vie Framboise</strong> France</p>
         </div>
     </section>
 	
@@ -363,7 +375,7 @@
 </div>
 
 <footer>
-    <p>Why limit happy to an hour?</p>
+    <p><strong>Why limit happy to an hour?</strong></p>
 </footer>
 
 </body>
